@@ -19,7 +19,7 @@ const wss = new WebSocket.Server({ noServer: true });
 
 // Middleware setup
 app.use(session({
-    secret: process.env.SESSION_SECRET || '29FAA',
+    secret: process.env.SESSION_SECRET ||,
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
